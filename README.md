@@ -40,5 +40,36 @@ For Windows in cmd:
 - [pymongo](https://pypi.org/project/pymongo/)
 - [asyncio](https://pypi.org/project/asyncio/)
 
+## Commands
+### Admin module
+- set_prefix <prefix> - Set bot prefix for your server [Administrator]
+- set_descriptor <'en', 'ru'> - Set language descriptor for your server [Administrator]
+- set_emoji <emoji> - Set money emoji for your server [Administrator]
+### Event
+- on_message - Checks the message and translates it if it was written in another language
+### Owner
+- rld <cogs.standart | etc.> - Reload modules
+- unload <cogs.standart | etc.> - Unload modules
+- logout - Disable Bot
+### Shop
+- shop <category=None> <page=None> - Show you all items in category
+- buy <item> - Buy item from the shop
+- add_item <item_name> - Add item to the shop [Administrator]
+- [del, delete] <item_name> - Delete item from the shop [Administrator]
+- edit - show all subcommands for edit [Administrator]
+### Standard
+- [money, bal] <@member:None> - Check your balance or member
+- dep <money> - Deposit Your money to the Soviet Bank
+- with <money> - Withed Your money from the Soviet Bank
+- rep <@member> - give +rep for you Bro
+- give <@member> money - Give money to member
+- profile - Shows your custom profile
+- profile_edit - Allows you to edit your profile. Just follow the instructions
+### Waifu
+- waifu - get help about the Waifu commands
+- waifu like <@member> - Putting in a profile of who you like
+- waifu marry <@member> - Give invite of marry to user
+- waifu declaim - Break off relations
+- waifu profile - Shows your waifu profile
 ### Author
 Discord - **Comrade Woodpacker#9345**
