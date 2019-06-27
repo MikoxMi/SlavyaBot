@@ -48,9 +48,10 @@ For Windows in cmd:
 ### Event
 - on_message - Checks the message and translates it if it was written in another language
 ### Owner
-- rld <cogs.standart | etc.> - Reload modules
-- unload <cogs.standart | etc.> - Unload modules
-- logout - Disable Bot
+- rld <cogs.standart | etc.> - Reload modules [Owner]
+- unload <cogs.standart | etc.> - Unload modules [Owner]
+- logout - Disable Bot [Owner]
+- add_money @member <money> - Give money to member [Owner]
 ### Shop
 - shop <category=None> <page=None> - Show you all items in category
 - buy <item> - Buy item from the shop
