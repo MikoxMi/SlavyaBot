@@ -33,6 +33,7 @@ For Windows in cmd:
 - setx URL_MONGO = YOUR_URL_MONGO Example: mongodb://<dbuser>:<dbpassword>@dsXXXXXX.mlab.com:XXXXX/XXXXX
 
 9. Add bot to your server and run it
+```python main.py```
 
 ## Used Libraries
 - [discord.py](https://github.com/Rapptz/discord.py)
