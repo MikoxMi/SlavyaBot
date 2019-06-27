@@ -1,39 +1,44 @@
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # Slavya bot
 ![Image](https://i.imgur.com/Oxv2kKf.png)
 ## Description
 
 **Bot is local, it allows you to bring together most of the people for social development**
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Installation
 
-### Markdown
+This bot work on MongoDB
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+1. Register on the site [mlab](https://mlab.com)
+2. Create a database
+3. Add next collection to the database:
+- member_inventory
+- members
+- server_settings
+- shop
+4. Add new user in "Users"
 
-```markdown
-Syntax highlighted code block
+5. Install Python 3.6.2
 
-# Header 1
-## Header 2
-### Header 3
+6. Clone repository:
+``` git clone https://github.com/MikoxMi/SlavyaBot.git ```
 
-- Bulleted
-- List
+7. Install requirements:
+```pip install -r requirements.txt```
 
-1. Numbered
-2. List
+8. Set envinronment variable
+For Windows in cmd:
+- setx TOKEN = BOT_TOKEN
+- setx URL_MONGO = YOUR_URL_MONGO Example: mongodb://<dbuser>:<dbpassword>@dsXXXXXX.mlab.com:XXXXX/XXXXX
 
-**Bold** and _Italic_ and `Code` text
+9. Add bot to your server and run it
 
-[Link](url) and ![Image](src)
-```
+## Used Libraries
+- [discord.py](https://github.com/Rapptz/discord.py)
+- [googletrans](https://pypi.org/project/googletrans/)
+- [pymongo](https://pypi.org/project/pymongo/)
+- [asyncio](https://pypi.org/project/asyncio/)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MikoxMi/SlavyaBot/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Author
+Discord - **Comrade Woodpacker#9345**
