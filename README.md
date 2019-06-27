@@ -1,6 +1,8 @@
-## Welcome to GitHub Pages
+# Slavya bot
+![Image](https://i.imgur.com/Oxv2kKf.png)
+## Description
 
-You can use the [editor on GitHub](https://github.com/MikoxMi/SlavyaBot/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+**Bot is local, it allows you to bring together most of the people for social development**
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
