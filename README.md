@@ -6,6 +6,9 @@
 
 **Bot is local, it allows you to bring together most of the people for social development**
 
+## Todo:
+- Add Incom at the end of the day
+
 ## Installation
 
 This bot work on MongoDB
