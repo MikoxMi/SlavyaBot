@@ -4,8 +4,7 @@ import os
 class Mongo():
     def __init__(self):
         self.url = str(os.getenv('URL_MONGO'))
-        self.port = int(os.getenv('PORT'))
-        self.client = MongoClient(host=self.url, port=self.port, connectTimeoutMS=30000, serverSelectionTimeoutMS=10, connect=False)
+        self.client = MongoClient(self.url, connectTimeoutMS=30000)
         self.db = self.client.get_database("weekbd")
         self.collections = {'members': self.db.members,
                             'server_settings': self.db.server_settings,

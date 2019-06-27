@@ -1,4 +1,4 @@
 discord
 asyncio
 googletrans
-pymongo==3.6.1
+pymongo==2.8
