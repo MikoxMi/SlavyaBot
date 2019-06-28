@@ -2,15 +2,16 @@ from pymongo import MongoClient
 import os
 
 class Mongo():
-    
-    url = str(os.getenv('URL_MONGO'))
-    port = int(os.getenv('PORT'))
-    client = MongoClient(host=url, port=port, connectTimeoutMS=30000, connect=False, serverSelectionTimeoutMS=30000)
-    db = client.get_database(name="weekbd")
-    collections = {'members': db.members,
-                   'server_settings': db.server_settings,
-                   'shop': db.shop,
-                   'member_profile': db.member_profile}
+
+    def __init__(self):
+        self.url = str(os.getenv('URL_MONGO'))
+        self.client = MongoClient(host=self.url, connectTimeoutMS=30000, connect=False, serverSelectionTimeoutMS=30000)
+        print(self.client)
+        self.db = self.client.get_database(name="weekbd")
+        self.collections = {'members': self.db.members,
+                            'server_settings': self.db.server_settings,
+                            'shop': self.db.shop,
+                            'member_profile': self.db.member_profile}
 
     @staticmethod
     async def get_record(collection:str, name:str, value):
