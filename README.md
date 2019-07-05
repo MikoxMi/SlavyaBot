@@ -6,8 +6,6 @@
 
 **Bot is local, it allows you to bring together most of the people for social development**
 
-Server for test: [Discord Bot Server](https://discord.gg/qGCbsk9)
-
 ## Todo:
 - Add Incom at the end of the day
 
