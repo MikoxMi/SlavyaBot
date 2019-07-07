@@ -1,6 +1,5 @@
 import discord
 
-from googletrans import Translator
 from cogs.utils.u_mongo import Mongo
 from discord.ext import commands
 
@@ -119,26 +118,6 @@ class Events(commands.Cog):
                     "summary_money": obwak
                 }
                 await Mongo.update_record('members', member_record, upg_money)
-
-        #* Translate other language to Server_language 
-        #* Standard: English
-        record_server = await Mongo.get_record('server_settings', 'id', message.guild.id)
-        prefix = record_server['prefix']
-
-        first_message = message.content
-
-        translator = Translator()
-        t = translator.translate(first_message, dest=record_server['translator'])
-
-        check_origin = t.origin.replace(' ', '')
-        check_text = t.text.replace(' ', '')
-
-        if check_origin != check_text and prefix not in first_message:
-            await message.delete()
-            author_content = f'{message.author.mention} say:\n```diff\n- {t.text}```'
-            await message.channel.send(author_content)
-        else:
-            pass
 
     @commands.Cog.listener()
     async def on_member_join(self, member):
