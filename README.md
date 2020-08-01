@@ -77,4 +77,4 @@ For Windows in cmd:
 - waifu declaim - Break off relations
 - waifu profile - Shows your waifu profile
 ### Author
-Discord - **Comrade Woodpacker#9345**
+Discord - **Miko Avadonia#3043**
